@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Magenta</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>processRegistration</servlet-name>
+		<servlet-class>com.magenta.controller.ProcessRegistration</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>custRegistration</servlet-name>
+		<servlet-class>com.magenta.controller.CustRegistration</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>processAdd</servlet-name>
+		<servlet-class>com.magenta.controller.ProcessAdd</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>addMeet</servlet-name>
+		<servlet-class>com.magenta.controller.AddMeet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>re_schedule</servlet-name>
+		<servlet-class>com.magenta.controller.Reschedule</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>processRegistration</servlet-name>
+		<url-pattern>/processRegistration</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>custRegistration</servlet-name>
+		<url-pattern>/custRegistration</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>processAdd</servlet-name>
+		<url-pattern>/processAdd</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>addMeet</servlet-name>
+		<url-pattern>/addMeet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>re_schedule</servlet-name>
+		<url-pattern>/re_schedule</url-pattern>
+	</servlet-mapping>
+</web-app>
